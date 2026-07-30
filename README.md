@@ -77,287 +77,86 @@ Rather than focusing on a single model, this project emphasizes understanding th
 
 ---
 
-# 📂 Repository Structure
+## 📂 Repository Structure
 
 ```text
 Natural-Language-Processing/
-
-├── 01_Text_Preprocessing/
-├── 02_Tokenization/
-├── 03_Stopwords/
-├── 04_Stemming/
-├── 05_Lemmatization/
-├── 06_Text_Normalization/
-├── 07_Regular_Expressions/
-├── 08_Part_of_Speech_Tagging/
-├── 09_Named_Entity_Recognition/
-├── 10_Ngrams/
-├── 11_Bag_of_Words/
-├── 12_TF_IDF/
-├── 13_Word_Embeddings/
-├── 14_Text_Classification/
-├── 15_Sentiment_Analysis/
-
-├── datasets/
-├── notebooks/
-├── models/
-├── requirements.txt
+│
+├── Foundational_NLP/
+│   ├── Classical_Text_Processing.ipynb
+│   └── Adv_Text_Processing.ipynb
+│
+├── Text_Classification/
+│   ├── Text Classification notebooks and experiments
+│
+├── Sentiment_Analysis/
+│   ├── sentiment_analysis.ipynb
+│   ├── advance_sentiment_analysis.ipynb
+│   └── advance_sentiment_analysis.py
+│
+├── QA.ipynb - Colab.pdf
+├── text_summary.ipynb - Colab.pdf
+├── .gitignore
 └── README.md
 ```
 
----
+### 📌 Repository Contents
 
-# 🧩 Topics Covered
+### 🧠 Foundational NLP
 
-## 📖 NLP Foundations
+This section covers the core concepts required to understand Natural Language Processing, including:
 
-- Introduction to Natural Language Processing
-- Text Representation
-- NLP Pipeline
-- Challenges in NLP
-
----
-
-## 🧹 Text Preprocessing
-
-- Lowercasing
-- Removing Punctuation
-- Removing Numbers
-- HTML Removal
-- URL Removal
-- Emoji Removal
-- Unicode Normalization
-- Whitespace Normalization
+- Text preprocessing
+- Text normalization
+- Tokenization
+- Stopword removal
+- Stemming
+- Lemmatization
+- Regular expressions
+- Part-of-Speech (POS) tagging
+- Named Entity Recognition (NER)
+- N-grams
+- Bag of Words (BoW)
+- TF-IDF vectorization
+- Word embeddings
 
 ---
 
-## ✂️ Tokenization
+### 📄 Text Classification
 
-- Sentence Tokenization
-- Word Tokenization
-- Subword Tokenization
+Implements classical machine learning approaches for document classification, including:
 
----
+- Text preprocessing pipeline
+- Feature extraction
+- TF-IDF vectorization
+- Model training
+- Prediction
+- Performance evaluation
 
-## 🚫 Stopword Removal
-
-- Standard Stopwords
-- Custom Stopword Lists
-- Domain-Specific Stopwords
-
----
-
-## 🌱 Stemming
-
-- Porter Stemmer
-- Snowball Stemmer
-
----
-
-## 🍃 Lemmatization
-
-- WordNet Lemmatizer
-- POS-aware Lemmatization
-
----
-
-## 🔍 Regular Expressions
-
-Applications include:
-
-- Pattern Matching
-- Email Extraction
-- Phone Number Extraction
-- Text Cleaning
-
----
-
-## 🏷 Part-of-Speech Tagging
-
-Understanding grammatical structure using POS tags for downstream NLP tasks.
-
----
-
-## 👤 Named Entity Recognition
-
-Extracting entities such as:
-
-- Person
-- Organization
-- Location
-- Date
-- Time
-- Currency
-
----
-
-## 📚 N-Grams
-
-Implemented:
-
-- Unigrams
-- Bigrams
-- Trigrams
-
----
-
-# 🔤 Feature Engineering
-
-## Bag of Words
-
-Transform textual data into numerical feature vectors.
-
-## TF-IDF
-
-Learn how Term Frequency and Inverse Document Frequency improve document representation by emphasizing informative words.
-
-## Word Embeddings
-
-Introduction to distributed semantic representations including:
-
-- Word2Vec
-- GloVe
-
----
-
-# 🤖 Machine Learning for NLP
-
-Built multiple text classification models using classical machine learning algorithms.
-
-### Algorithms
+Algorithms explored include:
 
 - Logistic Regression
 - Naive Bayes
-- Support Vector Machine
+- Support Vector Machine (SVM)
 - Random Forest
 
-### Applications
+---
 
-- Spam Detection
-- Document Classification
-- News Categorization
-- General Text Classification
+### 😊 Sentiment Analysis
+
+Builds end-to-end sentiment analysis pipelines, covering:
+
+- Data preprocessing
+- Feature engineering
+- Classical machine learning models
+- Advanced sentiment analysis workflows
+- Performance evaluation using standard classification metrics
 
 ---
 
-# 😊 Sentiment Analysis
+### 📚 Additional Learning Resources
 
-Developed a complete sentiment analysis pipeline including:
+The repository also includes exploratory notebooks and study materials on:
 
-- Data Cleaning
-- Feature Engineering
-- Text Vectorization
-- Model Training
-- Prediction
-- Performance Evaluation
-
-Supported sentiment classes:
-
-- Positive
-- Neutral
-- Negative
-
----
-
-# 📊 Model Evaluation
-
-Performance was measured using standard classification metrics:
-
-- Accuracy
-- Precision
-- Recall
-- F1 Score
-- Confusion Matrix
-
----
-
-# 💻 Technology Stack
-
-| Category | Tools |
-|----------|------|
-| Programming | Python |
-| Data Analysis | NumPy, Pandas |
-| NLP | NLTK, SpaCy |
-| Machine Learning | Scikit-Learn |
-| Visualization | Matplotlib, Seaborn |
-| Development | Jupyter Notebook |
-
----
-
-# 🚀 Getting Started
-
-Clone the repository
-
-```bash
-git clone https://github.com/yourusername/Natural-Language-Processing.git
-```
-
-Move into the project
-
-```bash
-cd Natural-Language-Processing
-```
-
-Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-Launch Jupyter Notebook
-
-```bash
-jupyter notebook
-```
-
----
-
-# 📈 Learning Outcomes
-
-By completing this repository, I developed practical experience in:
-
-- Designing complete NLP preprocessing pipelines
-- Converting raw text into machine-readable representations
-- Feature engineering for textual data
-- Building machine learning models for NLP
-- Evaluating classification systems
-- Understanding linguistic processing techniques
-- Preparing for modern NLP architectures and LLM-based systems
-
----
-
-# 🔮 Future Work
-
-The next phase of this repository will focus on modern NLP techniques, including:
-
-- Word2Vec from Scratch
-- FastText
-- GloVe
-- Sequence-to-Sequence Models
-- Attention Mechanism
-- Transformer Architecture
-- BERT
-- RoBERTa
-- GPT Models
-- Fine-Tuning Large Language Models
-- Retrieval-Augmented Generation (RAG)
-
----
-
-# 🤝 Contributions
-
-Contributions, suggestions, and improvements are always welcome.
-
-If you found this repository useful, consider giving it a ⭐ to support the project.
-
----
-
-# 📜 License
-
-This repository is intended for educational and research purposes.
-
----
-
-<p align="center">
-<b>Building strong NLP foundations today to create intelligent AI systems tomorrow.</b>
-</p>
+- Question Answering (QA)
+- Text Summarization
